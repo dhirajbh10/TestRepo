@@ -23,7 +23,7 @@ namespace WebAPIAssignment.Repository
             {
                 return _dbContext.Employee.ToList();
             }
-            catch
+            catch(Exception e)
             {
                 throw;
             }   
