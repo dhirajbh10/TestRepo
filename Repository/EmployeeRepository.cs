@@ -42,7 +42,7 @@ namespace WebAPIAssignment.Repository
                     throw new ArgumentNullException();
                 }
             }
-            catch
+            catch(Exception e)
             {
                 throw;
             }
