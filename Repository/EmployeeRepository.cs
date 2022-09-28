@@ -67,7 +67,7 @@ namespace WebAPIAssignment.Repository
                 _dbContext.Entry(employee).State = EntityState.Modified;
                 _dbContext.SaveChanges();
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
                 throw;
             }
@@ -90,7 +90,7 @@ namespace WebAPIAssignment.Repository
                     throw new ArgumentNullException();
                 }
             }
-            catch
+            catch (Exception e)    
             {
                 throw;
             }
