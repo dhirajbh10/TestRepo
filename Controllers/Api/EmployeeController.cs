@@ -26,7 +26,7 @@ namespace WebAPIAssignment.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Employee>>> Get()
-        {
+            {
             return await Task.FromResult(_IEmployee.GetEmployeeDetails());
         }
 

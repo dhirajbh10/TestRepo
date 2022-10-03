@@ -10,7 +10,7 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WebAPIAssignment.Controllers
+namespace HippoAPIAssignment.Controllers.Api
 {
     [Route("api/[controller]")]
     [ApiController]
