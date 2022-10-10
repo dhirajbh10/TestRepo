@@ -43,7 +43,7 @@ namespace HippoAPIAssignment.Controllers.Api
                         new Claim("DisplayName", user.DisplayName),
                         new Claim("UserName", user.UserName),
                         new Claim("Email", user.Email)
-                    };
+                    };  
 
                     var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]));
                     var signIn = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
