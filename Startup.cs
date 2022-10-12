@@ -8,8 +8,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using Server.Models;
 using WebAPIAssignment.Repository;
-using Microsoft.IdentityModel.Tokens;
-using System.Text;
+
 namespace Server
 {
     public class Startup
@@ -24,8 +23,8 @@ namespace Server
         {
             public static object AuthenticationScheme { get; internal set; }
         }
-
-        public void ConfigureServices(IServiceCollection services)
+    
+    public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ServerDBContext>(
               options =>
